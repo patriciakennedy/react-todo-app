@@ -1,6 +1,9 @@
-export function Tabs() {
+import { TodoCards } from './TodoCard';
+
+export function TodoList() {
     return (
-      <div></div>
+        <div>
+            <TodoCards />
+        </div>
     );
-    
-};
+}

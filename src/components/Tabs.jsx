@@ -1,6 +1,7 @@
 export function Tabs() {
-  return (
-    <div></div>
-  );
-
-};
+    return (
+        <nav>
+            <p>I am the Tabs!</p>
+        </nav>
+    );
+}
