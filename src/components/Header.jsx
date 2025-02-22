@@ -1,7 +1,7 @@
 export function Header() {
     return (
         <header>
-            <p>I am Header!</p>
+            <h1 className="text-gradient">You have 3 open tasks.</h1>
         </header>
     );
 }

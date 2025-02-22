@@ -1,7 +1,7 @@
 export function Tabs() {
     return (
         <nav>
-            <p>I am the Tabs!</p>
+            <p></p>
         </nav>
     );
 }

@@ -1,7 +1,7 @@
 export function TodoInput() {
     return (
         <div>
-            <p>I am the Todo Input</p>
+            <p></p>
         </div>
     );
 }
