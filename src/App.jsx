@@ -16,6 +16,8 @@ function App() {
         { input: 'Hey! Add your first todo!', complete: true },
     ]);
 
+    const [selectedTab, setSelectedTab] = useState('Open');
+
     function handleAddTodo(newTodo) {
         //...todos, spreads out original values in the array and append it to newTodo array
         const newTodoList = [...todos, { input: newTodo, complete: false }];
@@ -28,7 +30,11 @@ function App() {
     return (
         <>
             <Header todos={todos} />
-            <Tabs todos={todos} />
+            <Tabs
+                selectedTab={selectedTab}
+                setSelectedTab={setSelectedTab}
+                todos={todos}
+            />
             <TodoList todos={todos} />
             <TodoInput handleAddTodo={handleAddTodo} />
         </>
