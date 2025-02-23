@@ -22,8 +22,7 @@ export function TodoList(props) {
                 );
             })}
 
-            <p></p>
-            <p></p>
+            
         </>
     );
 }
