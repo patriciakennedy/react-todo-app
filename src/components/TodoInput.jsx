@@ -1,7 +1,10 @@
 export function TodoInput() {
     return (
-        <div>
-            <p></p>
+        <div className="input-container">
+            <input placeholder="Add task" type="text" />
+            <button>
+                <i className="fa-solid fa-plus"></i>
+            </button>
         </div>
     );
 }
