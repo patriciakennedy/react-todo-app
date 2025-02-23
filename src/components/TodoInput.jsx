@@ -11,7 +11,6 @@ export function TodoInput(props) {
                     setInputValue(e.target.value);
                 }}
                 placeholder="Add task"
-                
             />
             <button
                 onClick={() => {
