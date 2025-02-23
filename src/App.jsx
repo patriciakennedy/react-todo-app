@@ -25,8 +25,15 @@ function App() {
     }
 
     // update/edit/modify
-    function handleCompleteTodo(index) {}
+    function handleCompleteTodo(index) {
+        let newTodoList = [...todos];
+        let completedTodo = todos[index];
+        completedTodo['complete'] = true;
+        newTodoList[index] = completedTodo;
+        setTodos(newTodoList);
+    }
 
+    // delete function
     function handleDeleteTodo(index) {
         let newTodoList = todos.filter((val, valIndex) => {
             return valIndex !== index;
@@ -43,6 +50,7 @@ function App() {
                 todos={todos}
             />
             <TodoList
+                handleCompleteTodo={handleCompleteTodo}
                 handleDeleteTodo={handleDeleteTodo}
                 selectedTab={selectedTab}
                 todos={todos}
