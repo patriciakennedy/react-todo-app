@@ -6,7 +6,7 @@ export function Header(props) {
     return (
         <header>
             <h1 className="text-gradient">
-                You have {todosLength} open {isTasksPlura}.
+                Your task list: {todosLength} item(s) left {isTasksPlura}.
             </h1>
         </header>
     );
